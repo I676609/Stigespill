@@ -5,6 +5,7 @@ import java.util.Queue;
 
 public class Brett {
 	private Queue<Spiller> spillkoe;
+	
 
 	public Brett(int antall) {
 		spillkoe = new LinkedList<>();
@@ -16,6 +17,13 @@ public class Brett {
 	}
 
 	public void SjekkPlasseringsEgenskaper(Spiller spiller) {
+		int pos = spiller.getPlassering();
+		switch(pos) {
+		case 100:
+		case 80:
+			System.out.println("Spiller : " +spiller.getFarge() + "har kommet i mål!");
+				
+		}
 
 	}
 
