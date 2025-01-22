@@ -45,9 +45,27 @@ public void trillTerning() {
 	 if(nyplass<=100) {
 		 plassering = nyplass;
 	 }
-	
-	
+	 
 }
+public int getPlassering() {
+	return plassering;
+}
+public void setPlassering(int plassering) {
+	this.plassering = plassering;
+}
+public Farge getFarge() {
+	return farge;
+}
+public void setFarge(Farge farge) {
+	this.farge = farge;
+}
+public boolean isFengsel() {
+	return fengsel;
+}
+public void setFengsel(boolean fengsel) {
+	this.fengsel = fengsel;
+}
+
 
 
 

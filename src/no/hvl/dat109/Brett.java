@@ -15,4 +15,23 @@ public class Brett {
 
 	}
 
+	public void SjekkPlasseringsEgenskaper(Spiller spiller) {
+
+	}
+
+	public void nesteSpiller() {
+
+	}
+
+	public Spiller getSpiller(Farge farge) {
+		for (Spiller s : spillkoe) {
+			if (s.getFarge().equals(farge)) {
+				return s;
+
+			}
+
+		}
+		return null;
+
+	}
 }
