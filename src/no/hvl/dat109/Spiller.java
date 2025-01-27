@@ -20,34 +20,14 @@ public class Spiller {
 	}
 
 	/**
-	 * Triller terning og oppdatarer plasseringen. om du Triller 6 så får trille på
-	 * nytt, om dette skjer 3 ganger blir du plassert i "fengsel" og må trille 6
-	 * engang til for å komme deg ut.
+	 * Triller terningen 
 	 * 
 	 * 
 	 */
-	public void trillTerning() {
+	public int trillTerning() {
 		Random rand = new Random();
-		int tall = rand.nextInt(1, 7);
-		if (fengsel && tall == 6) {
-			fengsel = false;
-		}
-		if (fengsel) {
-			return;
-		}
-
-		while (tall == 6 || tall == 12) {
-			tall += rand.nextInt(1, 7);
-
-		}
-		if (tall == 18) {
-			plassering = 0;
-			fengsel = true;
-		}
-		int nyplass = plassering + tall;
-		if (nyplass <= 100) {
-			plassering = nyplass;
-		}
+		return rand.nextInt(1, 7);
+		
 
 	}
 
