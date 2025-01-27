@@ -9,11 +9,12 @@ public class Spiller {
 
 	/**
 	 * Oppretter Spiller objektet med variabler
+	 * @param farge 
 	 * 
 	 * @param farge fra Brett klassen
 	 */
 	public Spiller(Farge farge) {
-		this.plassering = 1;
+		this.plassering = 0;
 		this.farge = farge;
 		this.fengsel = false;
 

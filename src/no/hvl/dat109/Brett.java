@@ -37,7 +37,10 @@ public class Brett {
 			spiller.setPlassering(nyplass);
 		}
 	}
-
+/**
+ * Sjekker om plassen til spilleren står på en "slange eller stige" og oppdaterer posisjonen utifra det.
+ * @param spiller
+ */
 	public void SjekkPlasseringsEgenskaper(Spiller spiller) {
 		int pos = spiller.getPlassering();
 		switch (pos) {
@@ -79,6 +82,9 @@ public class Brett {
 		Spiller temp = spillkoe.poll();
 		spillkoe.add(temp);
 
+	}
+	public Spiller fremsteSpiller() {
+		return spillkoe.peek();
 	}
 
 	public Spiller getSpiller(Farge farge) {
