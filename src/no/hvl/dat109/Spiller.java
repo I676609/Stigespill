@@ -67,12 +67,12 @@ public class Spiller {
 		this.plassering = plassering;
 	}
 
+	/**
+	 * 
+	 * @return fargen til spiller
+	 */
 	public Farge getFarge() {
 		return farge;
-	}
-
-	public void setFarge(Farge farge) {
-		this.farge = farge;
 	}
 
 	public boolean isFengsel() {
