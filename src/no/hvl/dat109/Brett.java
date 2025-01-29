@@ -16,6 +16,11 @@ public class Brett {
 		}
 
 	}
+/**
+ * Spilleren triller trerning og oppdaterer posisjon utifra ternings kastet, om du triller 6 så får du trille på nytt
+ * , om dette skjer 3 ganger så havner du i "fengsel" og må trille 6 neste runde for å få bevege seg.
+ * @param spiller
+ */
 
 	public void OppdaterSpillerPosisjon(Spiller spiller) {
 		int tall = spiller.trillTerning();
@@ -77,6 +82,11 @@ public class Brett {
 		}
 
 	}
+	/**
+	 * En hjelpe metode som printer ut til konsoll om hvor slangen eller stigen tok spilleren.
+	 * @param pos
+	 * @param spiller
+	 */
 	private void slangePrint(int pos, Spiller spiller) {
 		System.out.println("Å nei " + spiller.getFarge() + " landet på en slange falt fra" + pos +  " ned til " + spiller.getPlassering());
 	}
