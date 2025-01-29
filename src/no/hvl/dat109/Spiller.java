@@ -6,12 +6,9 @@ public class Spiller {
 	private int plassering;
 	private Farge farge;
 	private boolean fengsel;
-	private boolean vunnet;
 
 	/**
 	 * Oppretter Spiller objektet med variabler
-	 * 
-	 * @param farge
 	 * 
 	 * @param farge fra Brett klassen
 	 */
