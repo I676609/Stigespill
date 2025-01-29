@@ -90,7 +90,7 @@ public class Brett {
 	 * @param spiller
 	 */
 	private void slangePrint(int pos, Spiller spiller) {
-		System.out.println("Å nei " + spiller.getFarge() + " landet på en slange falt fra" + pos +  " ned til " + spiller.getPlassering());
+		System.out.println("Å nei " + spiller.getFarge() + " landet på en slange falt fra " + pos +  " ned til " + spiller.getPlassering());
 	}
 	private void stigePrint(int pos, Spiller spiller) {
 		System.out.println("Spiller " + spiller.getFarge() + " var heldig og tok en stige helt fra " + pos +  " opp til " + spiller.getPlassering());
