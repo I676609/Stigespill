@@ -76,7 +76,7 @@ public class Brett {
 		case 28: spiller.setPlassering(84);stigePrint(pos, spiller);break;
 		case 21: spiller.setPlassering(42);stigePrint(pos, spiller);break;
 		case 16: spiller.setPlassering(6);slangePrint(pos,spiller);break;
-		case 6: spiller.setPlassering(31);stigePrint(pos, spiller);break;
+		case 8: spiller.setPlassering(31);stigePrint(pos, spiller);break;
 		case 4: spiller.setPlassering(14);stigePrint(pos, spiller);break;
 		case 2: spiller.setPlassering(38);stigePrint(pos, spiller);break;
 		default: return;
