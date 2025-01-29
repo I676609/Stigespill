@@ -7,9 +7,8 @@ public class Spill {
 	/**
 	 * Starter og styrer spillet. Spør brukeren hvor mange spillere som skal delta, 
 	 * oppretter brettet og gjennomfører spillet ved å oppdatere spillerposisjoner 
-	 * og sjekke egenskaper til plasseringene. Spillet avsluttes når det ikke er 
-	 * flere spillere igjen.
-	 *
+	 * og sjekke egenskaper til plasseringene. Spillet avsluttes når alle har fullført og spillkoen er tom. 
+	 * 	 *
 	 * @throws InterruptedException hvis tråden blir avbrutt under venting (Thread.sleep).
 	 */
 	public void spill() throws InterruptedException {

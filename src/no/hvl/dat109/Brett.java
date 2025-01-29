@@ -26,6 +26,7 @@ public class Brett {
 		int tall = spiller.trillTerning();
 		if (spiller.isFengsel() && tall == 6) {
 			spiller.setFengsel(false);
+			System.out.println(spiller.getFarge() + " kom ut av fengsel!");
 		}
 		if (spiller.isFengsel()) {
 			return;
@@ -38,6 +39,7 @@ public class Brett {
 		if (tall == 18) {
 			spiller.setPlassering(1);
 			spiller.setFengsel(true);
+			System.out.println(spiller.getFarge() + " havnet i fengsel!! TAPER");
 		}
 		int nyplass = spiller.getPlassering() + tall;
 		if (nyplass <= 100) {
@@ -119,5 +121,9 @@ public class Brett {
 		}
 		return null;
 
+	}
+	public Queue<Spiller> getSpillkoe(){
+		return spillkoe;
+		
 	}
 }
