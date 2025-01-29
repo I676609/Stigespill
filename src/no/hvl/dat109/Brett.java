@@ -56,7 +56,6 @@ public class Brett {
 		case 100:
 		case 80:
 			System.out.println("Spiller : " + spiller.getFarge() + " har kommet i mål!");
-			spiller.setVunnet(true);
 			spillkoe.remove(spiller);
 			vinnerkoe.add(spiller);
 			break;

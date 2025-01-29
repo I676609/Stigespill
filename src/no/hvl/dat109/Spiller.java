@@ -16,15 +16,12 @@ public class Spiller {
 		this.plassering = 1;
 		this.farge = farge;
 		this.fengsel = false;
-		this.vunnet = false;
-
 	}
 
 	/**
 	 * Triller terningen og skriver ut hva verdi terningen hadde
+	 * 
 	 * @return Int verdi av terning kast
-	 * 
-	 * 
 	 */
 	public int trillTerning() {
 		Random rand = new Random();
@@ -58,20 +55,19 @@ public class Spiller {
 		return farge;
 	}
 
+	/**
+	 * 
+	 * @return om spiller er i fengsel
+	 */
 	public boolean isFengsel() {
 		return fengsel;
 	}
 
+	/**
+	 * 
+	 * @param sender spiller inn eller ut av fengsel
+	 */
 	public void setFengsel(boolean fengsel) {
 		this.fengsel = fengsel;
 	}
-
-	public Boolean isVunnet() {
-		return vunnet;
-	}
-
-	public void setVunnet(boolean vunnet) {
-		this.vunnet = vunnet;
-	}
-
 }
